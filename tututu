@@ -1,0 +1,21 @@
+let array = [1, 2, 3, "victor", "maria", "jose"];
+
+
+
+function manipulaLista(lista){
+    console.log("LISTA ORIGINAL:", lista, "\n");
+
+    console.log(lista.push("fabio")); // adiciona "fabio" no final da lista
+    console.log(lista)
+
+    lista.pop();                //apaga o ultimo elemento
+    console.log("nova lista com.pop():",lista);
+
+    lista.shift()
+    console.log("nova lista com .shift():",lista);
+
+    lista.unshift("leandro") 
+    console.log("nova lista com.unshift()", lista)
+}
+
+manipulaLista(array);
