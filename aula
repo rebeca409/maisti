@@ -1,0 +1,6 @@
+function multi( valor1,valor2,valor3){
+console.log("o valor da multiplicação é:" + valor1*valor2*valor3);
+return  valor1,valor2,valor3;
+
+}
+ multi(3,2,2
