@@ -1,0 +1,14 @@
+class Mae{
+    constructor(nome, filhos){
+    this.nome = nome;
+    this.filhos = filhos;
+
+
+    }
+     adicionarfilhos(filho1){           //adiciona filhos na respctiva lista de filhos de rosa 
+        this.filhos.push(filho1)
+     }
+}
+
+    let minhaMae =  new Mae ("rosa", [" rebeca"]);
+    console.log( minhaMae.nome)
