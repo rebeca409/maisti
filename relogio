@@ -1,0 +1,29 @@
+let seg =0;
+let min =0;
+let hor =0;
+
+function segundos(){
+    seg ++;
+
+}
+function minuto(){
+    if (seg==60){
+        min+=1;
+        seg=0;
+    }
+}
+
+function hora(){
+    if(min ==60){8
+        hor +=1;
+        min=0;
+    }
+}
+
+while(true){
+    segundos();
+    minuto();
+    hora();
+    
+    console.log(hor, ":",min,":",seg);
+}
