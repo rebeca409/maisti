@@ -1,0 +1,29 @@
+class Bancaria{
+    constructor(cpf, nome, saldo){
+        this.cpf = cpf;
+        this.nomePrimeiro = nome;
+        this.saldo = saldo;
+    }
+
+    depositor(dinheiro){
+        return this.saldo += dinheiro
+    }
+
+
+    saque(dinheiro){
+        return this.saldo -= dinheiro
+    }
+
+    transferencia(dinheiro, contaRecebedora){
+        this.saque(dinheiro);
+        contaRecebedora.depositor(dinheiro)
+        console.log("Valor de Transferencia: R$",dinheiro, ". Saldo Atual REMETENTE: R$", this.saldo, ". Saldo atual DESTINATARIO: R$", this.saldo);
+    }
+
+
+}
+let benevides = new Bancaria("999.888.777-31", "Benevides", 0)
+let fabio = new Bancaria("111.222.333-45", "Fabio", 500)
+
+fabio.depositor(500)
+fabio.saque(900)
