@@ -1,0 +1,15 @@
+class unhasPintadas{
+    constructor(corUnhas, tamanho){
+     this.corUnhas = corUnhas
+     this.tamanho = tamanho
+}
+ tamanho(tamanhoCrescido){
+     this.tamanho += tamanhoCrescido
+    
+ }
+
+}
+
+let lexy = new unhasPintadas( "vermelho", 5)
+
+console.log(lexy.corUnhas)
