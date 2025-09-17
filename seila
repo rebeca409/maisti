@@ -1,0 +1,12 @@
+let valorDiaria= 90
+let valorTaxa
+
+function locadora(dias, km){
+    valorDiaria =90*dias
+    valorTaxa = (km - (dias*100))* 12
+    valorPago= valorDiaria + valorTaxa
+
+    return valorPago
+}
+
+console.log(locadora(5, 360))
